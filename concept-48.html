@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLONE NODE CONCEPT(copy node)</title>
+</head>
+<body>
+    <ul id="mydiv">
+        <li>HOME</li>
+        <li>ABOUT US</li>
+        <li>CONTACT US</li>
+        <li>SERVICES</li>
+
+    </ul>
+    <div id="one">
+
+    </div>
+    <script>
+        var x=document.getElementById("mydiv");
+        // if you want duploicate only parent Element
+        // then written clone node(false);
+        var duplicate= x.cloneNode(false);
+
+        // if you want duploicate  parent and 
+        // child both Element
+        // then written clone node(true);
+        var duplicateone= x.cloneNode(true);
+        console.log(duplicateone);
+        // now this duplicate node appned in the 
+        // element
+        var s=document.getElementById("one");
+        s.appendChild(duplicateone);
+        
+    </script>
+</body>
+</html>

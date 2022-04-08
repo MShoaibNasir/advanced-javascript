@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="geek">DOM</title>
+</head>
+<body>
+    <div id="geek">
+        <h1 class="waoo">I AM LEARNING ADVANCE JAVA SCRIPT</h1>
+        <h2 class="waoo">FROM THE CHANNEL GEEKYSHOWS</h2>
+<h3 class="poli"></h3>
+
+    </div>
+    <p class="geek myclass">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </p>
+
+    <h4 class="geek">sfskjfnd</h4>
+    <h6 class="myclass"></h6>
+    <script>
+// query selector select all the elements id and
+//  classess which is used in body
+// for Element:-
+var result=document.querySelectorAll("p,h1");
+document.write(result+"<br>");
+console.log(result);
+
+
+// for id:-
+var resultone=document.querySelectorAll("#geek");
+document.write(resultone+"<br>");
+console.log(resultone);
+
+
+
+// for class:-
+var resulttwo=document.querySelectorAll(".geek");
+document.write(resulttwo+"<br>");
+console.log(resulttwo);
+
+
+
+
+// for attribute:-
+var resulttwo=document.querySelectorAll("div[id]");
+document.write(resulttwo+"<br>");
+console.log(resulttwo);
+
+
+    </script>
+</body>
+</html>

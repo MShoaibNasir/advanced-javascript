@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>normalize concept</title>
+</head>
+<body>
+<div id="waoo">
+    <h1>I AM USING VISUAL CODE</h1>
+    <h2>i am also learning java script</h2>
+    
+</div>
+<script>
+    // first we accessing the id element
+    var x=document.getElementById("waoo");
+    // now we create a text node and add into div with the help of id
+x.appendChild(document.createTextNode("Hello"));
+
+    // now we create a text node and add into div with
+    //  the help of id
+    x.appendChild(document.createTextNode("i am going"));
+
+
+    // now we create a text node and add into div
+    //  with the help of id
+    x.appendChild(document.createTextNode("home tomorrow"));
+    // now we adjust these three content into one
+    //  through noramile method
+    x.normalize();
+    console.log(x.childNodes);
+</script>
+</body>
+</html>

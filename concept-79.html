@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT HANDLING</title>
+    <style>
+        #btn{
+            cursor: pointer;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        #display{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>EVENT HANDLING</h1>
+    <button id="btn">CLICKME</button>
+    <button id="display">ASIF</button>
+    <script>
+        var x=document.getElementById("btn");
+        x.onclick=function alertworld(){
+            alert("HELLO WORLD");
+        }
+
+//    you can also write you code to execute the event 
+//    like this     
+        function disp(){
+document.write("MY FRIEND NAME IS ASIF");
+        }
+        var asif=document.getElementById("display");
+        asif.onclick=disp;
+
+    </script>
+</body>
+</html>

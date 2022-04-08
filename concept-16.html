@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent node and parent element concept</title>
+</head>
+
+<body>
+    <img src="2.png" style="width: 40vw;">
+    <h1 id="myid">Parent node and parent element concept</h1>
+    <p id="myp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus exercitationem vitae sed ab facere unde.
+        Dolores in ipsum, incidunt esse enim optio quisquam necessitatibus quam, tempora ullam quo sit.</p>
+
+    <script>
+        var result = document.getElementById("myp");
+        console.log(result.parentNode + "<br>");
+        console.log(result.parentElement + "<br>");
+        // document.write(result.parentNode)
+    </script>
+</body>
+
+</html>

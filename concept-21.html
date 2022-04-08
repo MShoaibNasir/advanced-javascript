@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myid">
+        <!-- this is comment --> <span>we are learning js</span> <em>now</em> </h1>
+        <p id="myid1">i am paragraph</p>
+        <p id="myid2"><span>i am span</span> paragraph2</p>
+        <script>
+            // first child accept any thing like comment enter space text
+            // but first child element only accept first element
+            // for first child:-
+            var s=document.getElementById("myid");
+            var x=s.firstChild;
+            console.log(x);
+            // firstChild==childNodes[0]
+            // firstElementChild==children[0]
+
+            // for first childelement:-
+            var s=document.getElementById("myid");
+            var y=s.firstElementChild;
+            console.log(y);
+            document.write(s.firstElementChild.textContent="i am learing DOM")
+
+// now we can change the value of first child of #myid:-
+s.firstChild.textContent="hello world i am shoaib nasir";
+
+
+        </script>
+</body>
+</html>

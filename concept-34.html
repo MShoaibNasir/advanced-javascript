@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>append concept</title>
+</head>
+<body>
+    <div id="muydiv">
+        <h1>i am learning java script</h1>
+    </div>
+    <script>
+        // first we access id
+        var x=document.getElementById("muydiv");
+// now we create two elements
+var y=document.createElement("h2");
+var z=document.createElement("p");
+// now we appned these two new elements into framents
+var f=document.createDocumentFragment("");
+f.appendChild(y);
+f.appendChild(z);
+// now we appned text node into these new elements
+y.textContent="this is h2 from java script";
+z.textContent="this is p from java script";
+
+// now appned these new fragment into id
+x.appendChild(f);
+// now we see the whole process into console
+console.log(x);
+    </script>
+</body>
+</html>

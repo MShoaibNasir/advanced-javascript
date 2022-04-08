@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DOM SELECTOR</title>
+</head>
+<body>
+    <h1 title="myheading">HEADING1</h1>
+    <img src="img-1.gif" alt="imageone" style="width: 50%; height: 50%;">
+    <img src="img-2.jfif" alt="imagetwo" style="width: 50%; height: 50%;">
+    <div>
+        <ul id="myl">
+            <li class="game">item1</li>
+            <li class="supergame">item2</li>
+            <li class="game-super">item3</li>
+            <li class="gamesuper">item4</li>
+            <li class="super-game">item5</li>
+            <li class="game super">item6</li>
+            <li class="super game">item7</li>
+            <li class="super">item8</li>
+        </ul>
+    </div>
+    <p title="mypara1" class="red black"> this is para graph</p>
+    <p title="mypara2" class="red "> this is para graph</p>
+    <p title="mypara3" class=" black"> this is para graph</p>
+    <p title="mypara4" id="book"> this is para graph</p>
+    <h3 class="red">HEADING 3</h3>
+    <h4 id="book">heading 4</h4>
+    <script>
+        // you can slelect the whole tag p
+        // which is having title
+var x=document.querySelectorAll("p[title]")
+console.log(x);
+
+// but you can also select the tag with title name
+var y=document.querySelectorAll("p[title='mypara1']")
+console.log(y);
+
+// now select the class which having the name game
+// with ~
+var j=document.querySelectorAll("[class ~='game']");
+console.log(j);
+
+
+
+// now select the class which having the starting
+//  name game with | but its return in two condition
+// 1-same name game
+// 2-game-over
+var l=document.querySelectorAll("[class |='game']");
+console.log(l);
+
+
+
+
+
+
+// now select the class which having the starting
+//  name game with ^ but its return in two condition
+// 1-same name game
+// 2-game-over
+// 3-gameover
+// 4-game over
+var m=document.querySelectorAll("[class ^='game']");
+console.log(m);
+
+
+
+
+// now select the class which having the end
+//  name game with $ but its return in following condition
+// 1-same name game
+// 2-super-game
+// 3-supergame
+// 4-super game
+var n=document.querySelectorAll("[class $='game']");
+console.log(n);
+
+
+
+
+
+// now select the class which having the 
+//  name game with * but its return in following condition
+// 1-same name game
+// 2-super-game
+// 3-supergame
+// 4-super game
+var f=document.querySelectorAll("[class *='ga']");
+console.log(f);
+
+
+// if you want to access the first child of li then 
+
+var v=document.querySelectorAll('li:first-child');
+console.log(v);
+
+
+
+
+// if you want to access the last child of li then 
+
+var v=document.querySelectorAll('li:last-child');
+console.log(v);
+
+
+
+// if you want to access the nth child of li then 
+
+var w=document.querySelectorAll('li:nth-child(3)');
+console.log(w);
+
+
+
+
+// if you want to access the even nth child of li then 
+
+var b=document.querySelectorAll('li:nth-child(even)');
+console.log(b);
+
+
+// if you want to access the even nth child of li then 
+
+var q=document.querySelectorAll('li:nth-child(odd)');
+console.log(q);
+
+
+// if you want to select the element which having no child
+// then written:-
+
+var empty=document.querySelectorAll(":empty");
+console.log(empty);
+    </script>
+    
+</body>
+</html>

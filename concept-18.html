@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <h1 id="myid">
+        <!-- this is comment --> we are learning js</h1>
+        <p id="myid1">i am paragraph</p>
+        <p id="myid2"><span>i am span</span> paragraph2</p>
+        <script>
+    // <!-- important notes:- -->
+    // <!-- child nodes accept white spaces enter and text comment -->
+    // <!-- whrere as children nodes do not acceppt white spaces,text,comment and enter -->
+    // childnodes vs children
+    var  result=document.getElementById("myid");
+    // childnodes:-
+    console.log(result.childNodes);
+    // children:-
+    console.log(result.children);
+    // length of the childnodes of myid:-
+    var x=result.childNodes;
+    var lenx=x.length;
+    console.log(lenx)
+
+
+
+    // length of the children of myid:-
+    var a=result.children;
+    var lena=a.length;
+    console.log(lena)
+
+
+
+// for myid2:-
+
+
+    var  resultone=document.getElementById("myid2");
+    // childnodes:-
+    console.log(resultone.childNodes);
+    // children:-
+    console.log(resultone.children);
+
+
+    // length of the childnodes of myid2:-
+    var y=resultone.childNodes;
+    var leny=y.length;
+    console.log(leny)
+
+
+
+
+
+
+
+    // length of the children of myid2:-
+    var b=resultone.children;
+    var lenb=b.length;
+    console.log(lenb)
+        </script>
+
+</body>
+</html>

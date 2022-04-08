@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS STYLE DECLERATION OBJECT</title>
+</head>
+<body>
+    <div class="h">
+        <h1 id="h1" style="font-style: italic;">ADVANCE JAVA SCRIPT</h1>
+    </div>
+    <script>
+        // CSS STYLE DECLERATION OBJECT:-
+
+        var x=document.getElementById("h1");
+        // for defining the whole style of 
+        // particualr Object
+        // METHOD 1:-
+    var hello=window.getComputedStyle(x);
+    // get computed style only read the properties
+    // means you cannot change the properties
+        console.log(hello);
+    console.log(hello.fontStyle);
+    // method-2:-
+// THROUGH METHOD 2 YOU CAN ONLY CHANGE THE PROPERTIES
+// but all properties put online and the priority through
+//  this method is very high
+    var i=x.style;
+    i.color="red";
+    console.log(i);
+
+
+    </script>
+</body>
+</html>

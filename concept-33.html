@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="muid">
+        <h1>MY NAME IS ASIF</h1>
+
+    </div>
+    <script>
+        // first we create element
+        var s=document.createElement("h2");
+        // then we craete comment
+        var x=document.createComment("THIS IS COMMENT");
+        // then we craete text node
+        var y=document.createTextNode("WAOOO THIS IS TEXT NODE");
+        // now the excess the div with the help of id
+        var t=document.getElementById("muid");
+        // now add textnode into s(new created element):
+    
+        console.log(s)
+        var b=t.appendChild(y);
+        console.log(t);
+    </script>
+</body>
+</html>

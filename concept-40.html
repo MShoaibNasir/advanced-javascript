@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertAdjacentElement</title>
+</head>
+<body>
+    <div id="mydiv">
+        <h1 id="h1">HEADING 1</h1>
+    <h2 id="h2">HEADING 2</h2>
+    <h3 id="h3">HEADING 3</h3>
+    </div>
+    <script>
+        // first we access div
+        var x=document.getElementById("mydiv");
+        // now we access h2
+        var y=document.getElementById("h2");
+        // now we create element
+        var z=document.createElement("p");
+        
+        z.textContent="my name is dellcorei7";
+        // y.insertAdjacentElement("beforebegin",z);
+        // y.insertAdjacentElement("afterbegin",z);
+        // y.insertAdjacentElement("beforeend",z);
+        y.insertAdjacentElement("afterend",z);
+        console.log(x);
+    </script>
+</body>
+</html>

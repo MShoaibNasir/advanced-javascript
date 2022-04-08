@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertadjustment text</title>
+</head>
+<body>
+    <div id="mydiv">
+        <h1 id="h1">H1 HEADING</h1>
+        <h2 id="h2">H2 HEADING</h2>
+        
+    </div>
+    <script>
+        // moveelement.insertAdjacentText(position,textelemet);
+        // var parentelement=document.getElementById("mydiv");
+        var moveelement=document.getElementById("h2");
+        var addingelement="my name is shoaib";
+        moveelement.insertAdjacentText("beforebegin",addingelement);
+        moveelement.insertAdjacentText("afterbegin",addingelement);
+        moveelement.insertAdjacentText("beforeend",addingelement);
+        moveelement.insertAdjacentText("afterend",addingelement);
+
+
+
+    </script>
+    
+</body>
+</html>

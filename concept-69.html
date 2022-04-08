@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSSTYLEDOCUMENTTATIONOBJECT</title>
+</head>
+<body>
+    <h1 id="myclass" style="background-color: balck; color: white;">HEADINGONE</h1>
+    <script>
+        var x=document.getElementById("myclass");
+        // first you see in console about
+        //  cssstyyledocumenttation:
+        console.log(x.style);
+        // you can aslo change the css property 
+        // of selected 
+        x.style.backgroundColor="red";
+        x.style.fontSize="7vh";
+        
+        // and now see all the properties of x 
+        // in console.log
+        console.log(x);
+
+    </script>
+</body>
+</html>

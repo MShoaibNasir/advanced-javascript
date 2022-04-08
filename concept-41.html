@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htmlinsertadjacentelement</title>
+</head>
+<body>
+    <div id="myid">
+        <h1 id="h1">HEADING ONE</h1>
+        <h2 id="h2">HEADING2</h2>
+    </div>
+    <script>
+        var x=document.getElementById("myid");
+        var y=document.getElementById("h2");
+        var htmlelement="<h3> my name is shoaib</h3>";
+        y.insertAdjacentHTML("beforebegin",htmlelement);
+        y.insertAdjacentHTML("beforeend",htmlelement);
+        y.insertAdjacentHTML("afterbegin",htmlelement);
+        y.insertAdjacentHTML("afterend",htmlelement);
+
+    </script>
+</body>
+</html>

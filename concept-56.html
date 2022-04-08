@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="mydiv">
+        <li>ITEM 1</li>
+        <li id="myli">ITEM 2</li>
+        <li>ITEM 3</li>
+        <li>ITEM 4</li>
+    </ul>
+    <span id="pan">i am using visual studio code for coding</span>
+    <!-- <button onclick="myfunction()">CLICK HERE</button> -->
+    <script>
+        // this is parent node
+var parentnodee=document.getElementById("mydiv");
+// this is child  node which is replace
+var repalcenoode=document.getElementById("myli");
+// this is node which is replace into another node
+var movenode=document.getElementById("pan");
+
+parentnodee.replaceChild(movenode,repalcenoode);
+
+
+    </script>
+</body>
+</html>

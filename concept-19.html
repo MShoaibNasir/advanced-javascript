@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <h1 id="myid">
+        <!-- this is comment --> we are learning js</h1>
+        <p id="myid1">i am paragraph</p>
+        <p id="myid2"><span>i am span</span> paragraph2</p>
+        <script>
+    // loop childnodes of mydi:-
+    var result=document.getElementById("myid");
+    var x=result.childNodes;
+    var lenx=x.length;
+    for(let i=0; i<lenx; i++){
+        document.write(x[i].textContent+"<br>");
+    }
+
+
+
+
+
+document.write("<br>")
+
+    // loop childnodes of mydi1:-
+    var resultone=document.getElementById("myid1");
+    var y=resultone.childNodes;
+    var leny=y.length;
+    for(let i=0; i<leny; i++){
+        document.write(y[i].textContent+"<br>");
+    }
+        </script>
+
+</body>
+</html>

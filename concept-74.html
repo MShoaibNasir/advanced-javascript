@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT CONTENT CONCEPT</title>
+</head>
+<body>
+    <div class="i">
+        <h1 id="h1"> i am <em>learning</em> <span>JAVA SCRIPT</span>
+        </h1>
+    </div>
+    <script>
+        var x=document.getElementById("h1")
+
+
+        // this is return the inner text of the element
+
+        console.log(x.textContent);
+        // you can also the change the inner text of the 
+        // eleemnt
+        x.textContent="HELLO WORLD";
+        console.log(x.textContent);
+        //  but you can not  change the
+        //  inner html tag of the  eleemnt
+
+        x.textContent="<h1> my name is khan</h1>";
+        console.log(x.textContent);
+    </script>
+</body>
+</html>

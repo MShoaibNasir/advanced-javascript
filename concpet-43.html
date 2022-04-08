@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INNERHTML</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <ul id="my1">
+        <li>HOME</li>
+        <li>ABOUT US</li>
+        <li>CONTACT US</li>
+        <li>SERVICES</li>
+        <li>SHOP</li>
+
+    </ul>
+    <script>
+            // NOTE :-inner.html only changes child elements 
+    // but outer elements changes parent or child both    
+        var u=document.getElementById("my1");
+        u.innerHTML=" <li>SECTION1</li> <li>SECTION2</li> <li>SECTION3</li> <li>SECTION4</li> <li>SECTION5</li>"
+    </script>
+</body>
+</html>

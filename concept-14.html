@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="geek">DOM</title>
+
+    
+</head>
+<style>
+    body{
+
+        background-color: cadetblue;
+        color: white;
+    }
+</style>
+<body>
+    <h1 id="geek" class="myclass">talha nasir <!-- jsgnjnj -->
+
+    </h1>
+    <div id="geek">
+        <h1 class="waoo">I AM LEARNING ADVANCE JAVA SCRIPT</h1>
+        <h2 class="waoo">FROM THE CHANNEL GEEKYSHOWS</h2>
+<h3 class="poli">poli</h3>
+
+    </div>
+    <p class="geek myclass">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </p>
+
+    <h4 class="geek">sfskjfnd</h4>
+    <h6 class="myclass"></h6>
+    <script>
+        // see the value of the attribute
+        // and also their value by this method
+var s=document.getElementById("geek");
+var x=s.attributes[0].name;
+var h=s.attributes[0].value;
+document.write(x+"="+h);
+document.write("<br>");
+// for second attribute:-
+
+
+var r=s.attributes[1].name;
+var j=s.attributes[1].value;
+document.write(r+"="+j+"<br>");
+
+
+// now find the length of the particular
+// attribute
+
+
+var z=s.attributes.length;
+document.write(z+"<br>");
+
+// now apply for loop to extract attribute:-
+for(let i=0; i<z; i++){
+    document.write(s.attributes[i].name+" ");
+    document.write(s.attributes[i].value);
+    document.write("<br>");
+}
+
+
+    </script>
+</body>
+</html>

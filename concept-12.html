@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="geek">DOM</title>
+
+    
+</head>
+<style>
+    body{
+
+        background-color: cadetblue;
+        color: white;
+    }
+</style>
+<body>
+    <h1 id="geek">talha nasir <!-- jsgnjnj -->
+
+    </h1>
+    <div id="geek">
+        <h1 class="waoo">I AM LEARNING ADVANCE JAVA SCRIPT</h1>
+        <h2 class="waoo">FROM THE CHANNEL GEEKYSHOWS</h2>
+<h3 class="poli">poli</h3>
+
+    </div>
+    <p class="geek myclass">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </p>
+
+    <h4 class="geek">sfskjfnd</h4>
+    <h6 class="myclass"></h6>
+    <script>
+        // document
+document.write("-------document-------<br><br>");
+document.write(document.nodeName+"<br>");
+document.write(document.nodeType+"<br>");
+document.write(document.nodeValue+"<br>");
+
+
+console.log(document.nodeName+"<br>");
+console.log(document.nodeType+"<br>");
+console.log(document.nodeValue+"<br>");
+
+
+
+
+
+// for element:-
+
+var elm=document.getElementById("geek");
+
+document.write(elm.nodeName+"<br>");
+document.write(elm.nodeType+"<br>");
+document.write(elm.nodeValue+"<br>");
+
+
+console.log(elm.nodeName+"<br>");
+console.log(elm.nodeType+"<br>");
+console.log(elm.nodeValue+"<br>");
+
+
+
+
+// for text:-
+document.write("<br>")
+var elm=document.getElementById("geek");
+
+document.write(elm.firstChild.nodeName+"<br>");
+document.write(elm.firstChild.nodeType+"<br>");
+document.write(elm.firstChild.nodeValue+"<br>");
+
+
+console.log(elm.firstChild.nodeName+"<br>");
+console.log(elm.firstChild.nodeType+"<br>");
+console.log(elm.firstChild.nodeValue+"<br>");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for comment:-
+document.write("<br>")
+var elm=document.getElementById("geek");
+
+document.write(elm.firstChild.nextSibling.nodeName+"<br>");
+document.write(elm.firstChild.nextSibling.nodeType+"<br>");
+document.write(elm.firstChild.nextSibling.nodeValue+"<br>");
+
+
+console.log(elm.firstChild.nextSibling.nodeName+"<br>");
+console.log(elm.firstChild.nextSibling.nodeType+"<br>");
+console.log(elm.firstChild.nextSibling.nodeValue+"<br>");
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSERT BEFORE CONCEPT</title>
+</head>
+<body>
+    <ul id="myid">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+        <li id="jquery">JQUERY</li>
+        <li id="responsive">UI/UX RESPONSIVE</li><!-- move this element before jquery -->
+
+    </ul>
+    <script>
+// insert before concept
+// parentnode.insertbefore(newnode,refrencenode);
+
+// first we accesss parentnode
+var PN=document.getElementById("myid");
+
+// first we accesss newnode
+
+var NN=document.getElementById("responsive");
+// first we accesss refrencenode
+var refrencenodeee=document.getElementById("jquery");
+PN.insertBefore(NN,refrencenodeee);
+
+
+
+
+    </script>
+</body>
+</html>

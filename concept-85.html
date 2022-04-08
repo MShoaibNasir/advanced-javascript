@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARGET VS CURRENT TARGET</title>
+    <style>
+        #one{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            color: white;
+        }
+        #two{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            color: white;
+        }
+        #three{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            color: white;
+        }
+        #four{
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>TARGET VS CURRENT TARGET</h1>
+    <div id="one" data-name="1">1
+        <div id="two" data-name="2">1
+            <div id="three" data-name="3">1
+                <div id="four" data-name="4">1
+        
+                </div>
+            </div>
+        </div>    
+    </div>
+    <script>
+        var a=document.getElementById("one");
+        var b=document.getElementById("two");
+        var c=document.getElementById("three");
+        var d=document.getElementById("four");
+        a.addEventListener("click",(e)=>{console.log("1");
+        console.log("THE TARGET OF:-"+e.target.dataset.name);
+        console.log("the current target is:-"+e.currenttarget.dataset.name),false})
+
+
+        b.addEventListener("click",(e)=>{console.log("2");
+        console.log("THE TARGET OF:-"+e.target.dataset.name);
+        console.log("the current target is:-"+e.currenttarget.dataset.name),false})
+
+        c.addEventListener("click",(e)=>{console.log("3");
+        console.log("THE TARGET OF:-"+e.target.dataset.name);
+        console.log("the current target is:-"+e.currenttarget.dataset.name),false })
+        d.addEventListener("click",(e)=>{console.log("4");
+        console.log("THE TARGET OF:-"+e.target.dataset.name);
+        console.log("the current target is:-"+e.currenttarget.dataset.name),false})
+
+        
+    </script>
+    
+</body>
+</html>

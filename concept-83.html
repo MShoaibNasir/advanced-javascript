@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#one{
+    width: 10vw;
+    height: 10vh;
+    background-color: pink;
+}
+#two{
+    width: 15vh;
+    height: 15vw;
+    background-color: red;
+}
+ 
+#three{
+    width: 20vw;
+    height: 20vh;
+    background-color: yellow;
+}
+#four{
+    width: 25vw;
+    height: 25vh;
+    background-color: green;
+}
+ 
+#five{
+    width: 30vw;
+    height: 30vh;
+    background-color: aquamarine;
+}
+ </style>
+</head>
+
+<body>
+    <h1>EVENT CAPTURE AND bubbling</h1>
+    <div id="one">
+        1
+        <div id="two">
+            2
+            <div id="three">
+                3
+                <div id="four">
+                    4
+                    <div id="five">
+                        5
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        
+        var oneone=document.getElementById("one"); 
+        var twotwo=document.getElementById("two");
+        var threethree=document.getElementById("three");
+        var fourfour=document.getElementById("four");
+        var fivefive=document.getElementById("five");
+// bubbling from bottom to top
+        var fivefive=document.getElementById("five");
+        oneone.addEventListener("click",()=>{console.log("1")},false)
+        twotwo.addEventListener("click",()=>{console.log("2")},false)
+        threethree.addEventListener("click",()=>{console.log("3")},false)
+        fourfour.addEventListener("click",()=>{console.log("4")},false)
+        fivefive.addEventListener("click",()=>{console.log("5")},false)
+
+
+
+
+        // capturing from top to bottom
+        var fivefive=document.getElementById("five");
+        oneone.addEventListener("click",()=>{console.log("1")},true)
+        twotwo.addEventListener("click",()=>{console.log("2")},true)
+        threethree.addEventListener("click",()=>{console.log("3")},true)
+        fourfour.addEventListener("click",()=>{console.log("4")},true)
+        fivefive.addEventListener("click",()=>{console.log("5")},true)
+        
+        
+        
+           </script>
+</body>
+
+</html>

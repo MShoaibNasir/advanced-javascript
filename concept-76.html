@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DOM SELECTOR</title>
+</head>
+<body>
+    <h1 title="myheading">HEADING1</h1>
+    <img src="img-1.gif" alt="imageone">
+    <img src="img-2.jfif" alt="imagetwo">
+    <div>
+        <ul id="myl">
+            <li class="game">item1</li>
+            <li class="supergame">item2</li>
+            <li class="game-super">item3</li>
+            <li class="gamesuper">item4</li>
+            <li class="super-game">item5</li>
+            <li class="game super">item6</li>
+            <li class="super game">item7</li>
+            <li class="super">item8</li>
+        </ul>
+    </div>
+    <p title="mypara1" class="red black"> this is para graph</p>
+    <p title="mypara2" class="red "> this is para graph</p>
+    <p title="mypara3" class=" black"> this is para graph</p>
+    <p title="mypara4" id="book"> this is para graph</p>
+    <h3 class="red">HEADING 3</h3>
+    <h4 id="book">heading 4</h4>
+    <script>
+        // css selector dom
+        // element selector
+        var a=document.querySelectorAll("p");
+        // the above code put all the p elements 
+        // into a
+        console.log(a);
+        // you can aslo access the particualr p
+        // with index number just like that:-
+        console.log(a[0]);
+        console.log(a[1]);
+        // and you can also fint the length of the p
+        // like this code:-
+        console.log(a.length);
+
+        // now group selector concept:-
+        // the following the code find all the elemtns in 
+        // which is defines in the group and return all
+        var g=document.querySelectorAll("div,p,li");
+        console.log(g);
+
+
+        // now universal selector which is selected the whole 
+        // html elements in the dom
+        var h=document.querySelectorAll("*");
+        console.log(h);
+
+        // now universla style class
+        var i=document.querySelectorAll(".game");
+        // its return the whole classess which is called
+        // by the name of game
+        console.log(i);
+
+
+
+
+        var j=document.querySelectorAll("p.red");
+        // its return the whole classess which is called
+        // by the name of red but in tag p
+        console.log(j);
+
+
+
+
+        var k=document.querySelectorAll("p.red.black");
+        // now find the tag element p which have red and black 
+        // both classess
+        console.log(k);
+
+
+
+        // id selector:-
+        // the id selector have tow methods:-
+        // 1-
+        var r=document.getElementById("book");
+        console.log(r);
+        // 2-
+        var t=document.querySelectorAll("p#book");
+        console.log(t)
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASS LIST</title>
+    <style>
+        .myclass1{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="myclass1 myclass2" id="waoo">GEEKYSHOWS</h1>
+    <script>
+        var x=document.getElementById("waoo");
+        var y=x.classList;
+        // you can see the whole class list 
+        // of the element
+        console.log(x.classList);
+        // you can also see the list with index number 
+        console.log(x.classList[0]);
+        console.log(x.classList[1]);
+        console.log(y.value)
+
+        // now find the length
+        console.log(y.length);
+
+
+        // class list method
+        // 1-item():-
+        console.log(y.item(0));
+        console.log(y.item(1));
+        // now you can add more than one classess to the y by
+        // add method
+        y.add("myclass3","myclass4");
+        console.log(y);
+
+
+
+                // now you can remove more than one classess
+                //  to the y by remove method
+                // remove method:-
+        y.remove("myclass1");
+        console.log(y);
+
+
+
+
+
+        
+
+                // now you can replace more than one classess
+                //  to the y by repalce method
+                // remove method:-
+                y.replace("myclass3","myclassN");
+        console.log(y);
+
+        // now the next method is that an element contrain a class 
+        // or not:-
+        var g=y.contains("myclassN");
+        console.log(g);
+
+
+        // and the another method is toggle method
+        // the toggle method is that an opposite action
+        
+        // and in this toggle method the class is remove if element 
+        // has class and add the class if we put toggle
+        y.toggle("myclass1")
+        y.toggle("myclass1")
+        y.toggle("myclass1")
+
+        
+    </script>
+</body>
+</html>

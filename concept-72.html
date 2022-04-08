@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myh1" style="color: royalblue; background-color: bisque;">HELLO GEEKYSHOWS</h1>
+<script>
+            // NOTE:-THESE PROPERTY ARE LESS USED
+    var x=document.getElementById("myh1");
+
+    var css=x.style;
+    // csstext put their css styleling and repalce the inline 
+    // style
+    // we can identify the css style with index
+    console.log(css[0]);
+    css.cssText="font-size:7vh; color:green;"
+    var len=css.length;
+    console.log(len);
+    console.log(x)
+
+    // you can also identify the value
+    //  of style by getPropertyValue:
+    var g=css.getPropertyValue("color");
+    console.log(g);
+
+
+    var b=css.getPropertyValue("font-size");
+    console.log(b);
+
+
+
+    // remove property
+
+    var r=css.removeProperty("color");
+    console.log(x);
+    // set property
+    css.setProperty("margin-top","20vh","important");
+    console.log(x);
+    // priority property
+   var pp= css.getPropertyPriority("color");
+   console.log(pp);
+</script>
+
+</body>
+</html>

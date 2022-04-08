@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>removeChild CONCEPT</title>
+</head>
+<body>
+    <ul id="mydiv">
+        <li id="home">HOME</li>
+        <li>ABOUT US</li>
+        <li>CONTACT US</li>
+        <li>SERVICES</li>
+
+    </ul>
+    
+</body>
+<script>
+    // we delete the node so the syntex is:-
+    // parent.removeChild(refrencenode)
+
+
+    // first we access the parent node
+    var x=document.getElementById("mydiv");
+    
+    // now we access the refrence node which is deleted
+    var y=document.getElementById("home");
+    var z= x.removeChild(y);
+    console.log(z);
+</script>
+</html>
